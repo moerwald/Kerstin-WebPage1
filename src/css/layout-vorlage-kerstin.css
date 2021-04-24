@@ -1,0 +1,98 @@
+body {
+	/* Schriftart Lato von google Fonts verwenden */
+	color: #444;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato';
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+.wrapper {
+	/*	
+	Breite von 90%, mindestens 360px, maximal 1280px, zentriert, beliebige Hintergrundfarbe (nicht weiß)
+	*/
+	width: 90%;
+	min-width: 360px;
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;	
+	background-color: rgb(216, 229, 186);
+	}
+
+.site-header {
+	/*
+		Hintergrundbild so einbinden, dass es immer den ganzen Bildschirm
+		ausfüllt.
+
+		Die Propotion des Bildes beachten, der Container sollte proportional mitskalieren. Die Proportion errechnet sich aus Höhe / Breite * 100 = % der Höhe.
+
+		Suchbegriffe: background-image, background-size, background-position
+
+		Artikel: https://css-tricks.com/scaled-proportional-blocks-with-css-and-javascript/
+	*/
+	background-image: url(img/header-kerstin.jpg); width: 100%;
+	background-position:absolute;
+	background-size: contain;
+	}
+
+.site-header h1 {
+	width: 100%;
+	font-size: 3.5em;
+	color: #f88b93;
+	position: center;
+	vertical-align: middle;
+	text-align: center;
+								
+	/*
+		Überschrift so positionieren, dass diese horizontal und vertikal
+		zentriert erscheint.
+
+		Suchbegriffe: position absolute, transform - translate, position absolute center
+	*/
+}
+
+main {
+	/*
+		Dem Text einen Abstand zum Rand geben
+	*/
+margin-left: 20px;
+margin-right: 20px;
+}
+
+/*
+	Unabhängig vom Inhalt sollen alle li in einer Zeile gleich hoch erscheinen,
+	OHNE dass das height Attribut verwendet wird. (flexbox, grid)
+*/
+.galerie {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: stretch;
+	
+}
+
+.flex-container {
+	flex: 0 0 23%;
+	margin: 5%;
+	background-color:honeydew;
+}
+
+.galerie p {
+	padding: 1em;
+	text-align: left;
+}
+
+.galerie img {
+	/*
+		Die Bilder in der Galerie sollen mit dem Container proportional skalieren
+
+		Suchbegriffe: responsive image size
+	*/
+max-width: 100%;
+height: auto;
+flex-shrink: 0;
+flex-grow: 0;
+}

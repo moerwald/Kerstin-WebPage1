@@ -1,0 +1,71 @@
+body {
+	/* Schriftart Lato von google Fonts verwenden */
+	color: #444;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+.wrapper {
+	/*
+		Breite von 90%, mindestens 360px, maximal 1280px, zentriert, beliebige Hintergrundfarbe (nicht weiß)
+	*/
+}
+
+.site-header {
+	/*
+		Hintergrundbild so einbinden, dass es immer den ganzen Bildschirm
+		ausfüllt.
+
+		Die Propotion des Bildes beachten, der Container sollte proportional mitskalieren. Die Proportion errechnet sich aus Höhe / Breite * 100 = % der Höhe.
+
+		Suchbegriffe: background-image, background-size, background-position
+
+		Artikel: https://css-tricks.com/scaled-proportional-blocks-with-css-and-javascript/
+	*/
+}
+
+.site-header h1 {
+	width: 100%;
+	font-size: 3.5em;
+	/*
+		Überschrift so positionieren, dass diese horizontal und vertikal
+		zentriert erscheint.
+
+		Suchbegriffe: position absolute, transform - translate, position absolute center
+	*/
+}
+
+main {
+	/*
+		Dem Text einen Abstand zum Rand geben
+	*/
+}
+
+/*
+	Unabhängig vom Inhalt sollen alle li in einer Zeile gleich hoch erscheinen,
+	OHNE dass das height Attribut verwendet wird. (flexbox, grid)
+*/
+.galerie {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.galerie li {
+	background-color: white;
+}
+
+.galerie p {
+	padding: 1em;
+}
+
+.galerie img {
+	/*
+		Die Bilder in der Galerie sollen mit dem Container proportional skalieren
+
+		Suchbegriffe: responsive image size
+	*/
+}
