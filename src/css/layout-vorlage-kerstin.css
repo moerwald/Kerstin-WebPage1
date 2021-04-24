@@ -34,8 +34,8 @@ h6 {
 	der Container sollte proportional mitskalieren. Die Proportion errechnet sich aus Höhe / Breite * 100=% der Höhe. Suchbegriffe: background-image, background-size, background-position Artikel: https: //css-tricks.com/scaled-proportional-blocks-with-css-and-javascript/
 	*/
     background-image: url(../img/header-kerstin.jpg);
-    background-size: cover;
     background-position: absolute;
+    background-size: cover;
 }
 
 .site-header h1 {
