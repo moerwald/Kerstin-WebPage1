@@ -33,6 +33,10 @@ h6 {
     dass es immer den ganzen Bildschirm ausfüllt. Die Propotion des Bildes beachten,
 	der Container sollte proportional mitskalieren. Die Proportion errechnet sich aus Höhe / Breite * 100=% der Höhe. Suchbegriffe: background-image, background-size, background-position Artikel: https: //css-tricks.com/scaled-proportional-blocks-with-css-and-javascript/
 	*/
+
+    /** FIXED: Hier war der relative Pfad falsch -> du brauchst '../img/header-kerstin.jpg' statt 'img/header-kersting.jpg'
+               hier stehst du im Folder css um noch img zu kommen musst du eine Ebene höher (=..).
+               Da hier das Background-Image via CSS gesetzt wird, brauchst du es im HTML nicht mehr machen */
     background-image: url(../img/header-kerstin.jpg);
     background-position: absolute;
     background-size: cover;
@@ -76,17 +80,24 @@ main {
     align-items: stretch;
 }
 
-@media (max-width: 600px) {
-  .galerie {
-    flex-direction: column;
-  }
-}
-
+    /** FIXED: Hier war der Margin zu groß, anscheinend kommst du bei 5% Margin nur auf einen Drittelung
+      * bei 23% flex-basis. flex-container hab ich auf flex-item renamed (da eigentlich .gallerie der Container
+      * ist), dies ist aber nur eine Konvention und hat nix mit der CSS Logik zu tun.
+      */
 .flex-item {
     flex-basis:  23%;
     margin: 1%;
     background-color: honeydew;
 }
+
+    /** FIXED: Bei einer Browserbreite von kleiner 500px werden die flex-items in einer Spalte angeordnet.
+      */ 
+@media (max-width: 500px) {
+  .galerie {
+    flex-direction: column;
+  }
+}
+
 
 
 .galerie p {
