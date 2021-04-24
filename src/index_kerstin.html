@@ -1,67 +1,87 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Abschlussarbeit MDMK 2021</title>
-	<link rel="stylesheet" href="css/layout-vorlage-kerstin.css">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Abschlussarbeit MDMK 2021</title>
+    <link rel="stylesheet" href="css/layout-vorlage-kerstin.css">
 </head>
+
 <body>
-	<div class="wrapper">
+    <div class="wrapper">
 
-		<header class="site-header">
-			<h1>WS2021<br>Kerstin Sommer</h1>
-			<img src="img/header-kerstin.jpg">
-		</header>
+        <header class="site-header">
+            <h1>WS2021<br>Kerstin Sommer</h1>
+        </header>
 
-		<main>
-			<h2>Meine Audiobotschaft</h2>
-			<audio controls>
-				<source src="audio/AudioMP3.mp3" type="audio/mp3">
-			</audio>
+        <main>
+            <h2>Meine Audiobotschaft</h2>
+            <audio controls>
+                <source src="audio/AudioMP3.mp3" type="audio/mp3">
+            </audio>
 
-			<h2>Meine Galerie</h2>
-			<div class="galerie">
-				<div class="flex-container">
-					<img src="img/Kroatien.jpg" class="galerie img" alt="Baska">
-					<p>Laufen in Kroatien und den Ausblick genießen.</p></li>
-				</div>
-				<div class="flex-container">
-					<img src="img/Lonley-Beach.jpg" class="galerie img" alt="Lonley Beach">
-					<p>Lonley Beach auf Ko Chang in Thailand.</p></li>
-				</div>
-				<div class="flex-container">
-					<img src="img/MTB.jpg" class="galerie img" alt="Cres, Kroatien">
-					<p>Mountainbiken auf Cres in Kroatien.</p>
-				</div>
-				<div class="flex-container">
-					<img src="img/Strand.jpg" class="galerie img" alt="Thailand">
-					<p>Strandspaziergang in Thailand.</p>
-				</div>
-				<div class="flex-container">
-					<img src="img/Thailand.jpg" class="galerie img" alt="Ko Chang">
-					<p>Strandspaziergang in Thailand.</p>
-				</div>
-				<div class="flex-container">
-					<img src="img/Wasserfall.jpg" class="galerie img" alt="Wasserfall in Thailand">
-					<p>Wandern bei den Wasserfällen.</p>
-				</div>
+            <h2>Meine Galerie</h2>
+            <div class="galerie">
 
-							
-			<h2>CSS Analyse - Header</h2>
-			<p>Die Schrift einzupflegen gelangt mir dank einem Link von Google, den ich im Header platziert habe. Im CSS wird die Font im Body mit Lato definiert. 
-			Das Background Image einzufügen, gelang mir zuerst überhaupt nicht, obwohl ich gefühlt tausend Mal die Links zum Stylesheet und zu den Dateien geprüft habe. Alle CSS/HTML Websites, die ich gefunden habe, haben mir auch nur gezeigt, dass ich es eigentlich richtig gemacht habe, was sehr frustriert hat. Letztlich bin ich aber dann in einer ruhigen Minute doch draufgekommen: Die Ordnerstrukur am PC war schuld, weshalb nicht auf die IMG zugegriffen werden konnte. :-)
-			Das Audio hab ich einfach im HTML mittels audio controls eingefügt. Zuerst hat es nicht funktioniert (siehe oben), aber nachdem ich die Ordnerstrukur korrigiert hatte - und auch die m4v-Datei in mp3 konvertiert hatte, hat es funktioniert. 
-			Das Header Background Image ragt rechts über den Bildrand hinaus. +++++Dazu muss ich noch eine Lösung finden.++++++</p>
-			<p>Den Text im Header habe ich letztlich auch zentriert bekommen. Wobei zuerst nur horizontal zentriert war, vertikal hab ich mir mit Margin beholfen.
-			</p>
-			<h2>CSS Analyse - Galerie</h2>
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero dolorem cupiditate, delectus odit, dolorum incidunt consequatur possimus alias esse aperiam neque accusamus atque excepturi ad quae ea necessitatibus, molestias ex illo. Ab nulla ipsa exercitationem fugit adipisci incidunt tenetur minus!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsum magnam reprehenderit est rerum voluptatibus commodi, exercitationem, porro sapiente aut perferendis vero hic accusantium, tempora expedita.</p>
-			<p>Seiten, die mir bei der Aufgabe generell geholfen haben, waren u.a. wiki-selfhtml, w3school und unzählige Youtube-Videos.</p>
-		</main>
-	</div>
+                <div class="flex-item">
+                    <img src="img/Kroatien.jpg" class="galerie img" alt="Baska">
+                    <p>Laufen in Kroatien und den Ausblick genießen.</p>
+                </div>
+                <div class="flex-item">
+                    <img src="img/Lonley-Beach.jpg" class="galerie img" alt="Lonley Beach">
+                    <p>Lonley Beach auf Ko Chang in Thailand.</p>
+                </div>
+                <div class="flex-item">
+                    <img src="img/MTB.jpg" class="galerie img" alt="Cres, Kroatien">
+                    <p>Mountainbiken auf Cres in Kroatien.</p>
+                </div>
+                <div class="flex-item">
+                    <img src="img/Strand.jpg" class="galerie img" alt="Thailand">
+                    <p>Strandspaziergang in Thailand.</p>
+                </div>
+                <div class="flex-item">
+                    <img src="img/Thailand.jpg" class="galerie img" alt="Ko Chang">
+                    <p>Strandspaziergang in Thailand.</p>
+                </div>
+                <div class="flex-item">
+                    <img src="img/Wasserfall.jpg" class="galerie img" alt="Wasserfall in Thailand">
+                    <p>Wandern bei den Wasserfällen.</p>
+                </div>
+            </div>
+
+
+            <h2>CSS Analyse - Header</h2>
+            <p>Die Schrift einzupflegen gelangt mir dank einem Link von Google, den ich im Header platziert habe. Im CSS
+                wird die Font im Body mit Lato definiert. Das Background Image einzufügen, gelang mir zuerst überhaupt
+                nicht, obwohl ich gefühlt
+                tausend Mal die Links zum Stylesheet und zu den Dateien geprüft habe. Alle CSS/HTML Websites, die ich
+                gefunden habe, haben mir auch nur gezeigt, dass ich es eigentlich richtig gemacht habe, was sehr
+                frustriert hat. Letztlich bin ich
+                aber dann in einer ruhigen Minute doch draufgekommen: Die Ordnerstrukur am PC war schuld, weshalb nicht
+                auf die IMG zugegriffen werden konnte. :-) Das Audio hab ich einfach im HTML mittels audio controls
+                eingefügt. Zuerst hat es nicht
+                funktioniert (siehe oben), aber nachdem ich die Ordnerstrukur korrigiert hatte - und auch die m4v-Datei
+                in mp3 konvertiert hatte, hat es funktioniert. Das Header Background Image ragt rechts über den Bildrand
+                hinaus. +++++Dazu muss
+                ich noch eine Lösung finden.++++++</p>
+            <p>Den Text im Header habe ich letztlich auch zentriert bekommen. Wobei zuerst nur horizontal zentriert war,
+                vertikal hab ich mir mit Margin beholfen.
+            </p>
+            <h2>CSS Analyse - Galerie</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero dolorem cupiditate, delectus odit, dolorum
+                incidunt consequatur possimus alias esse aperiam neque accusamus atque excepturi ad quae ea
+                necessitatibus, molestias ex illo. Ab
+                nulla ipsa exercitationem fugit adipisci incidunt tenetur minus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsum magnam reprehenderit est rerum
+                voluptatibus commodi, exercitationem, porro sapiente aut perferendis vero hic accusantium, tempora
+                expedita.</p>
+            <p>Seiten, die mir bei der Aufgabe generell geholfen haben, waren u.a. wiki-selfhtml, w3school und unzählige
+                Youtube-Videos.</p>
+        </main>
+    </div>
 </body>
+
 </html>
